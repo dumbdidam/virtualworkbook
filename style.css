@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center;
+    z-index: -1; 
+}
+
+h1  {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 100px;
+    margin-top: 0.5em;
+    color: black;
+    padding: 0.5em
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: auto;
+    font-size: 30px;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+p {
+    padding: 2em;
+    font-size: 17px;
+}
+
+#imgOne {
+    margin-left: 10px;
+    padding: 2em;
+    width: 700px;
+    height: auto;
+}
+
+#imgTwo {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 1130px;
+    height: auto;
+}
+
+#imgThree {
+    margin-left: 225px;
+    padding: 2em;
+    width: 700px;
+}
+
+#imgFour {
+    margin-left: 120px;
+    padding: 2em;
+    width: 900px;
+}
+
+#imgFive {
+    margin-left: 120px;
+    padding: 2em;
+    width: 900px;
+}
+
+#imgSix {
+    margin-left: 5px;
+    padding: 1em;
+    width: 500px;
+    height: auto;
+}
+
+#imgSeven {
+    margin-left: 10px;
+    padding: 1em;
+    width: 500px;
+    height: auto;
+}
+
+#imgEight {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 500px;
+    height: auto;
+}
+
+#imgNine {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 200px;
+    height: auto;
+}
+
+#imgTen {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgEleven {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgTwelve {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgThirteen {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgFourteen {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgFifteen {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgSixteen {
+    margin-left: 10px;
+    padding: 0.5em;
+    width: 300px;
+    height: auto;
+}
+
+#imgSeventeen {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 1130px;
+    height: auto;
+}
+
+
+.desktop {
+    font-family: monospace;
+}
+
+.window {
+    width: 530px;
+    height: 530px;
+    border: 2.5px solid  rgb(205, 205, 205);
+    background-color: azure;
+    position: absolute;
+    cursor: move;
+    cursor: grab;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+
+.window.expanded {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 1280px;
+    height: 600px;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+
+#window1 {
+    top: 50px;
+    left: 100px;
+}
+
+#window2 {
+    top: 300px;
+    left: 700px;
+}
+
+#window3 {
+    top: 100px;
+    left: 1100px;
+}
+
+#window4 {
+    width: 450px;
+    height: 451px;
+    top: 440px;
+    left: 1350px;
+}
+
+
+.window-header {
+    position: sticky;
+    background-color: #ddd;
+    background-image: linear-gradient( to right, rgb(24, 92, 176),rgb(53, 129, 243));
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 1px;
+    padding-left: 6px;
+    cursor: grab;
+}
+
+
+.expand-btn {
+    margin-left: 0px;
+}
+
+.expand-btn:hover {
+    cursor:pointer;
+}
+
+.minimize-btn:hover {
+    cursor:pointer;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to right, rgb(24, 92, 176),rgb(53, 129, 243));
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color:azure;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 5px;
+    z-index: 100;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.clock {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    font-weight:300;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.folder-images {
+    margin-top: 670px;
+    display: flex;
+}
+
+img {
+    width: 150px;
+    height: auto; 
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#restrictedImg {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 430px;
+    height: 423px;
+}
+
+/*
+animations to do: 
+- dvd type floating animation
+- subtle sky animation
+- title animation
+- day and night animation depending on time of when website is opened
