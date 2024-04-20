@@ -155,6 +155,201 @@ p {
     height: auto;
 }
 
+#imgEighteen {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgNineteen {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwenty {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyOne {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyTwo {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyThree {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyFour {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 900px;
+    height: auto;
+}
+
+#imgTwentyFive {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentySix {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentySeven {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyEight {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgTwentyNine {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirty {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 200px;
+    height: auto;
+}
+
+#imgThirtyOne {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 200px;
+    height: auto;
+}
+
+#imgThirtyTwo {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 200px;
+    height: auto;
+}
+
+#imgThirtyThree {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtyFour {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtyFive {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtySix {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtySeven {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtyEight {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgThirtyNine {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgForty {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgFortyOne {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgFortyTwo {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgFortyThree {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgFortyFour {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
+
+#imgFortyFive {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 500px;
+    height: auto;
+}
 
 .desktop {
     font-family: monospace;
@@ -202,6 +397,13 @@ p {
     top: 200px;
     left: 130px;
 }
+
+
+#window5 {
+    top: 400px;
+    left: 1000px;
+}
+
 
 
 .window-header {
@@ -265,17 +467,24 @@ p {
 .app-images {
     margin-top: 340px;
     display: flex;
-    margin-left: 700px;
+    margin-left: 600px;
 }
 
 img {
     width: 140px; 
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    /*this specific transition code was adapted from W3School*/
+    background-color: transparent;
+    transition: background-color 0.6s ease;
 }
 
 img:hover {
     cursor: pointer;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(78, 119, 255, 0.5);
 }
 
 #restrictedImg {
