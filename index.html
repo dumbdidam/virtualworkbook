@@ -198,21 +198,44 @@
         </div>
     </div>
 
-    <div class="window" id="window4">
+     <div class="window" id="window4">
         <div class="window-header">
             Week 4  <button class="minimize-btn" onclick="minimizeWindow('window4')">-</button> <button class="expand-btn" onclick="expandWindow('window4')">⛶</button>
         </div>
         <div class="window-content">
-            <img src="restricted.jpg" id="restrictedImg">
+            <h1>>>>WEEK FOUR<<<</h1>
+            <p>
+                <b><em>Overview:<br></em></b>
+            <br>
+            This was the start of a new interactive media topic, <em>p5js</em>. There were several new terms and techniques that we were introduced to, as well as preparing ourselves for the next few weeks. With  <em>p5js</em>, there were a lot of new possibilities I found to be able to do in terms of creating an actual interactive website that I might apply to my own as it really pushes technical aspects of web design that might be difficult to do in basic javascript code.
+            <br>
+            <br>
+            <hr>          
+            <br>
+            text
         </div>
     </div>
+
+
 
     <div class="folder-images">
         <img src="week1.png" id="imgWeek1" onclick="showWindow('window1')">
         <img src="week2.png" id="imgWeek2" onclick="showWindow('window2')">
         <img src="week3.png" id="imgWeek3" onclick="showWindow('window3')">
         <img src="week4.png" id="imgWeek4" onclick="showWindow('window4')">
+        <img src="week5.png" id="imgWeek5" onclick="showWindow('window5')">
+        <img src="week6.png" id="imgWeek6" onclick="showWindow('window6')">
     </div>
+
+    <div class="app-images">
+    <img src="app1.png" id="app1" onclick="loadApp(appId)">
+    <img src="app2.png" id="app2" onclick="loadApp(appId)">
+    <img src="app3.png" id="app3" onclick="loadApp(appId)">
+    <img src="app4.png" id="app4" onclick="loadApp(appId)">
+    <img src="app5.png" id="app5" onclick="loadApp(appId)">    
+</div>
+
+<button onclick="openNewWindow()">Open New Window</button>
 
     <div class="footer">
        >>>INTERACTIVE MEDIA<<<
@@ -220,6 +243,15 @@
 </div>
 
     <script>
+
+function openNewWindow() {
+    // Define the URL to the other HTML file
+    var url = "workbook\sketch\index.html";
+    
+    // Open the URL in a new window
+    window.open(url, "_blank", "width=800,height=600");
+}
+
         function updateClock() {
         let now = new Date();
         let hours = now.getHours();
