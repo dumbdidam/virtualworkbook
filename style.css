@@ -351,6 +351,76 @@ p {
     height: auto;
 }
 
+#imgFortySix {
+    margin-left: 350px;
+    padding: 0.3em;
+    width: 600px;
+    height: auto;
+}
+
+#imgFortySeven {
+    margin-left: 300px;
+    padding: 0.3em;
+    width: 700px;
+    height: auto;
+}
+
+#imgFortyEight {
+    margin-left: 200px;
+    padding: 0.3em;
+    width: 450px;
+    height: auto;
+}
+
+#imgFortyNine {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 350px;
+    height: auto;
+}
+
+#imgFifty {
+    margin-left: 400px;
+    padding: 0.3em;
+    width: 300px;
+    height: auto;
+}
+
+#imgFiftyOne {
+    margin-left: 300px;
+    padding: 0.3em;
+    width: 450px;
+    height: auto;
+}
+
+#imgFiftyTwo {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 450px;
+    height: auto;
+}
+
+#imgFiftyThree {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 450px;
+    height: auto;
+}
+
+#imgFiftyFour {
+    margin-left: 150px;
+    padding: 0.3em;
+    width: 450px;
+    height: auto;
+}
+
+#imgFiftyFive {
+    margin-left: 30px;
+    padding: 0.3em;
+    width: 300px;
+    height: auto;
+}
+
 .desktop {
     font-family: monospace;
 }
@@ -402,6 +472,21 @@ p {
 #window5 {
     top: 400px;
     left: 1000px;
+}
+
+#window7 {
+    top: 200px;
+    left: 900px;
+}
+
+#window8 {
+    top: 350px;
+    left: 400px;
+}
+
+#window9 {
+    top: 120px;
+    left: 1103px
 }
 
 
@@ -471,7 +556,7 @@ p {
 }
 
 img {
-    width: 140px; 
+    width: 130px; 
     margin-right: 20px;
     margin-left: 20px;
 
