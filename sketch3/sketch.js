@@ -1,40 +1,53 @@
-//ascii webcam effect is inspired from https://www.youtube.com/watch?v=55iwMYv8tGI&pp=ygUKcDVqcyBhc2NpaQ%3D%3D
 const density = "Ñ@#W$9876543210?!abc;:+=-,._          ";
+
+const COLS = 240;          // more columns = more detail
+const FONT_SIZE = 2;       // px, lower = finer
+const CHAR_ASPECT = 0.55;  // monospace glyph width / height
 
 let video;
 let asciiDiv;
 
 function setup() {
+  noCanvas();
+  document.body.style.margin = '0';
+  document.body.style.background = 'rgb(160,255,0)';
+
   asciiDiv = createDiv();
   asciiDiv.style('position', 'absolute');
   asciiDiv.style('top', '50%');
   asciiDiv.style('left', '50%');
   asciiDiv.style('transform', 'translate(-50%, -50%)');
-    noCanvas();
-  video = createCapture(VIDEO);
-  video.size(130, 60);
-  
+  asciiDiv.style('font-family', 'monospace');
+  asciiDiv.style('font-size', FONT_SIZE + 'px');
+  asciiDiv.style('line-height', FONT_SIZE + 'px');
+  asciiDiv.style('letter-spacing', '0px');
+  asciiDiv.style('white-space', 'pre');
+  asciiDiv.style('color', 'lightgreen');
+
+  video = createCapture(VIDEO, () => {
+    // rows derived from the camera's real aspect ratio,
+    // corrected for characters being taller than wide
+    const aspect = video.height / video.width;
+    const rows = floor(COLS * aspect * CHAR_ASPECT);
+    video.size(COLS, rows);
+  });
+  video.size(COLS, floor(COLS * 0.75 * CHAR_ASPECT));
+  video.hide();
 }
 
 function draw() {
-background(160,255,0)
-    fill('lightgreen');
-    video.loadPixels();  
-    let asciiImage = "";
-    for (let j = 0; j < video.height; j++) {
+  video.loadPixels();
+  if (!video.pixels.length) return;
+
+  let out = "";
+  const len = density.length;
+  for (let j = 0; j < video.height; j++) {
     for (let i = 0; i < video.width; i++) {
-   const pixelIndex = (i + j * video.width) * 4;
-   const r = video.pixels[pixelIndex + 0];
-   const g = video.pixels[pixelIndex + 1];
-   const b = video.pixels[pixelIndex + 2];
-   const avg = (r + g + b) / 3;
-   const len = density.length;
-   const charIndex = floor(map(avg, 0, 255, 0, len));
-   const c = density.charAt(charIndex);
-   if (c == " ") asciiImage += "&nbsp;";
-    else asciiImage += c;
-   }
-  asciiImage += '<br/>';
+      const idx = (i + j * video.width) * 4;
+      const avg = (video.pixels[idx] + video.pixels[idx + 1] + video.pixels[idx + 2]) / 3;
+      out += density.charAt(floor(map(avg, 0, 255, 0, len)));
+    }
+    out += "\n";
   }
- asciiDiv.html(asciiImage);
+  asciiDiv.elt.textContent = out;
 }
